@@ -1,0 +1,41 @@
+.form-wrapper {
+  @extend %align-between;
+  align-items: center;
+  border-top: solid 1px #e5e5e5;
+  padding: 11px 0;
+}
+.footer-description {
+  font-size: 0.875rem;
+}
+.footer-link {
+  color: #f38181;
+}
+.contact-form {
+  display: flex;
+
+  &__input {
+    @include font(0.9375rem, italic, 1.6);
+    @include size(234px, 40px);
+    font-family: $secondary-font;
+    color: #cccccc;
+    border: solid 1px rgb(231, 231, 231);
+    border-right: none;
+    padding-left: 12px;
+    outline: none;
+
+    &::placeholder {
+      color: #cccccc;
+    }
+  }
+
+  &__btn {
+    @include size(150px, 40px);
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: none;
+    background-color: rgb(149, 225, 211);
+  }
+}

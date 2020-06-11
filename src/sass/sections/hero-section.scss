@@ -1,0 +1,55 @@
+.hero-section {
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    ),
+    url(../images/eagle.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        rgba(243, 129, 129, 0.9),
+        rgba(252, 227, 138, 0.9)
+      ),
+      url(../images/eagle@2x.jpg);
+  }
+
+  &__description {
+    font-size: 4.5rem;
+    font-family: 'Kaushan Script';
+    margin-bottom: 37px;
+
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+
+  &__titel {
+    @include font(9.375rem, normal, 0.933);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 110px;
+
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+  }
+}
+.under {
+  display: block;
+}
+.modal-btn {
+  @include size(154px, 34px);
+  font-size: 0.875rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: solid 3px rgb(255, 255, 255);
+  background-color: transparent;
+
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}

@@ -1,0 +1,20 @@
+.section-titel {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 112px;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: '';
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,9 @@
+@mixin font($fsz: 1rem, $fst: normal, $lh: 1.2) {
+  font-size: $fsz;
+  font-style: $fst;
+  line-height: $lh;
+}
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}

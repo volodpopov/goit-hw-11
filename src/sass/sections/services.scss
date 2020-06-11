@@ -1,0 +1,49 @@
+.services {
+  padding-top: 46px;
+  padding-bottom: 92px;
+
+  &__list {
+    @extend %align-between;
+    flex-wrap: wrap;
+
+    &-item {
+      display: flex;
+      width: 345px;
+
+      &:hover .services__list-icon {
+        fill: rgb(243, 129, 129);
+
+        animation: rotate-scale-up 0.65s linear both;
+      }
+    }
+
+    &-item:not(:nth-child(n + 4)) {
+      margin-bottom: 100px;
+    }
+
+    &-icon {
+      @include size(32px, 32px);
+      fill: rgb(149, 225, 211);
+
+      transition: all 0.2s linear;
+
+      &-wrapper {
+        margin-right: 28px;
+      }
+
+      &-titel {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-description {
+      @include font(0.9375rem, normal, 1.6);
+      font-family: $secondary-font;
+      color: $secondary-color;
+      text-align: left;
+    }
+  }
+}
